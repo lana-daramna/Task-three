@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            background-image: url('watch1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat:repeat;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        .login-title {
+            font-size: 5em;
+            font-weight: bold;
+            /* background-image: url('sport-watch.jpg'); */
+            background-color: #7ca17b;
+            background-size: cover;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        form {
+            text-align: center;
+            color: white;
+        }
+
+        fieldset {
+            margin: 0 auto;
+            padding: 20px;
+            width: 50%;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        label {
+            display: inline-block;
+            width: 150px;
+            text-align: right;
+        }
+
+        input {
+            margin-bottom: 10px;
+            padding: 8px;
+            border-radius: 5px;
+            border: none;
+            background-color: #f0f0f0;
+        }
+
+        a {
+            color: #00ffff; /* Light blue for links */
+            font-size: large;
+            text-decoration: none;
+            position: center;
+        }
+
+        a img {
+            vertical-align: middle;
+            margin: 5px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        input[type="submit"], input[type="reset"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: #0056b3;
+        }
+        #home{
+        display: inline-block;
+        text-decoration: none;
+        color: #1d9f3f;
+        background-color: #b0c0b0;
+        font-weight: 1000;
+        padding: 10px 20px;
+        border: 2px solid #774f8b;
+        border-radius: 5px; /* Rounded corners */
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    #home:hover{
+        background-color: #844ab0; /* Change background color on hover */
+        color: white; /* Change text color on hover */
+        text-decoration: none; /* No underline on hover */
+    }
+    </style>
+</head>
+<body>
+    <h1 class="login-title">Login to Watch Store</h1>
+    <a href="index.html" id="home">Home Page</a> 
+    <form method="post">
+        <fieldset>
+            <legend>Login to Your Account</legend>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" minlength="8" required placeholder="Enter your password">
+            <br>
+            <input type="submit" value="Login">
+            <input type="reset" value="Clear">
+            
+            <h3>Don't have an account?</h3>
+            <a href="signup.html">Go to the Sign Up Page</a>
+        </fieldset>
+    </form>
+    <br>
+    <a href="https://www.facebook.com"><img src="facebook.jpg" alt="Facebook" width="30"></a>
+    <a href="https://www.google.com"><img src="google.jpg" alt="Google" width="30"></a>
+</body>
+</html>

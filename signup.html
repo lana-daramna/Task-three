@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up for Watch Store</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <section id="main">
+        <a href="index.html">Home Page</a> 
+        <h2>Create a New Account</h2>
+        <form method="post">
+            <fieldset>
+                <legend>Sign Up Form</legend>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" maxlength="30" placeholder="Enter your name" required>
+                <br>
+                <label for="age">Age:</label>
+                <input type="number" name="age" id="age" min="15" max="70" placeholder="Enter your age" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <br>
+                <label for="create_password">Create Password:</label>
+                <input type="password" id="create_password" name="create_password" minlength="8" placeholder="Create a password" required>
+                <br>
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" minlength="8" placeholder="Confirm your password" required>
+                <br>
+                <input type="submit" value="Sign Up">
+            </fieldset>
+        </form>
+        <p>Already have an account? <a href="login.html">Login here.</a></p>
+    </section>
+</body>
+</html>

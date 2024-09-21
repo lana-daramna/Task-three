@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Store - Sales</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+
+        .sales-title {
+            text-align: center;
+            font-size: 3em;
+            color: #333;
+            margin-top: 20px;
+        }
+
+        .sales-section {
+            margin: 20px auto;
+            width: 80%;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .watch-image {
+            width: 100px;
+        }
+
+        .price, .discount {
+            font-weight: bold;
+        }
+
+        .availability {
+            color: green;
+            font-weight: bold;
+        }
+
+        .not-available {
+            color: red;
+            font-weight: bold;
+        }
+    #home{
+        display: inline-block;
+        text-decoration: none;
+        color: #8b6588;
+        padding: 10px 20px;
+        border: 2px solid #774f8b;
+        border-radius: 5px; /* Rounded corners */
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    #home:hover{
+        background-color: #844ab0; /* Change background color on hover */
+        color: white; /* Change text color on hover */
+        text-decoration: none; /* No underline on hover */
+    }
+
+    </style>
+</head>
+<body>
+    <a href="index.html" id="home">Home Page</a>
+    <h1 class="sales-title">Watch Store Sales</h1>
+
+    <div class="sales-section">
+        <table>
+            <thead>
+                <tr>
+                    <th>Watch Image</th>
+                    <th>Watch Name</th>
+                    <th>Price</th>
+                    <th>Discount</th>
+                    <th>Availability</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="watch2.jpg" alt="Watch 1" class="watch-image"></td>
+                    <td>Luxury Gold Watch</td>
+                    <td class="price">$500</td>
+                    <td class="discount">10% Off</td>
+                    <td class="availability">Available</td>
+                </tr>
+                <tr>
+                    <td><img src="watch5.jpg" alt="Watch 2" class="watch-image"></td>
+                    <td>Classic Blue Watch</td>
+                    <td class="price">$300</td>
+                    <td class="discount">5% Off</td>
+                    <td class="availability">Available</td>
+                </tr>
+                <tr>
+                    <td><img src="watch6.jpg" alt="Watch 3" class="watch-image"></td>
+                    <td>Sport Digital Watch</td>
+                    <td class="price">$150</td>
+                    <td class="discount">15% Off</td>
+                    <td class="not-available">not Available</td>
+                </tr>
+                <tr>
+                    <td><img src="watch7.jpg" alt="Watch 4" class="watch-image"></td>
+                    <td>Smart Watch</td>
+                    <td class="price">$350</td>
+                    <td class="discount">8% Off</td>
+                    <td class="availability">Available</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
